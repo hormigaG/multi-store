@@ -6,9 +6,9 @@ from odoo import models, fields
 
 
 class SaleOrder(models.Model):
-    _inherit = 'sale.order'
+    _inherit = "sale.order"
 
     store_id = fields.Many2one(
-        related='warehouse_id.store_id',
+        related="warehouse_id.store_id",
         store=True,
     )

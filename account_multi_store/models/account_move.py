@@ -6,9 +6,9 @@ from odoo import models, fields
 
 
 class AccountMove(models.Model):
-    _inherit = 'account.move'
+    _inherit = "account.move"
 
     store_id = fields.Many2one(
-        related='journal_id.store_id',
+        related="journal_id.store_id",
         store=True,
     )
